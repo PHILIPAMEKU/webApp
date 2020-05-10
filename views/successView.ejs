@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Add employeees</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="addemployeeviewbody">
+        <h1>EASYSOFT COMPANY LIMITED</h1>
+        <div id="addemployees">
+            <h3>ADD EMPLOYEES</h3>
+            <form id="addemployeeForm" method="POST" action="/addEmployee">  
+               <p id="namelabel">Name  <input type="text" name="name" placeholder="input name" required/></p>
+                <br>
+                <p id="inputlabel">Input each todo item on a new line</p>
+                <p><textarea style="height: 155px; width: 600px;" name="list"  required></textarea></p>
+                    <button type="submit" >sumbit</button>
+            </form>
+            <b><p style="font-size: larger;  color:  rgb(236, 92, 9);
+                border: 1px;
+                padding: 4px 8px;
+                text-decoration: none;">
+                <%= feedback%>
+            </p></b>
+        </div>
+    </body>
+</html>

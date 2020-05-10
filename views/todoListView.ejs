@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Todo list</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+
+    <body>
+      <h1>EASYSOFT COMPANY LIMITED</h1>
+        <div id="getodolist" >
+                <table>
+                   
+                    <caption>EMPLOYEES TODOLIST</caption>
+                     
+                    <tr>
+                      <th>NAME</th>
+                      <th>LIST</th>
+                    </tr>
+                    <% todoresult.forEach(function(item){%>
+                    <tr>
+                      <td><%= item.name %></td>
+                      <td> <ol type="1">
+                        <% item.list.map(function(todoitem){%>
+                            <li><%= todoitem %></li>
+                        <%})%>
+                        </ol>
+                      </td>
+                    </tr>
+                    <% }) %>
+                    
+                  </table>
+                  
+        
+        </div>
+    </body>
+</html>

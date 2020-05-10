@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>easySoft</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+        
+    </head>
+    <body id="homeviewbody">
+        <header><h1>EASYSOFT COMPANY LIMITED</h1></header>
+        <div id="home">
+            <h3>TODO REQUESTS</h3>
+            <form id="homeForm" method="POST" action="/todoRequest">
+                 <p>Enter employee name to submit to-do request</p>
+                <p><input type="text" name="name" placeholder="input name" required/></p>
+                <button type="submit" id="submitbutton">sumbit</button>
+            </form>
+            <br>
+           <p><a href="http://localhost:3000/todoList">TODO LIST</a>    
+            <a href="http://localhost:3000/employeeList">EMPLOYEE LIST</a>    
+            <a href="http://localhost:3000/addEmployee">ADD EMPLOYEE</a></p>    
+        </div>
+    </body>
+</html>

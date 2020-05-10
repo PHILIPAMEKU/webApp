@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>toodRequest</title>
+        <link href="/styles.css" rel="stylesheet" type="text/css"/>
+    </head>
+    <body id="todoRequestviewbody">
+        <h1>EASYSOFT COMPANY LIMITED</h1>
+        <div id="todorequest" >
+            
+            <% result.forEach(function(item){%>
+                To-do list for <b><%= item.name %></b><br>
+                    
+                <ol type="1">
+                <% item.list.map(function(todoitem){%>
+                    <li><%= todoitem %></li>
+                <%})%>
+                </ol>       
+                    
+                <% }) %>
+               
+                
+            
+            
+        </div>
+    </body>
+</html>
